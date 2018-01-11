@@ -14,10 +14,10 @@
   "author": "Nicholas Smith <fuhton@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fuhton"
+    "url": "https://github.com/fuhton/react-abc"
   },
   "bugs": {
-    "url": "https://github.com/fuhton"
+    "url": "https://github.com/fuhton/react-abc/issues"
   },
   "license": "MIT",
   "dependencies": {
