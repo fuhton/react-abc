@@ -1,6 +1,6 @@
 # React Abc Component
 
-React component for displaying Abc based notation. Wraps Abc.js for use in your React libraries
+React component for displaying Abc based notation. Wraps [Abc.js](https://github.com/paulrosen/abcjs) for use in your React libraries
 
 ---
 ## Installation
@@ -11,6 +11,8 @@ npm install react-abc
 ---
 ## Usage
 React-ABC takes a notation prop and outputs the rendered ABC notation. You can optionally add an `el` prop to attach to a specific DOM or React element.
+
+To see it in use, check the example here - [http://fuhton.github.io/react-abc/example/](http://fuhton.github.io/react-abc/example/)
 
 ### ES6
 ```javascript
