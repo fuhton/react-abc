@@ -1,9 +1,9 @@
-import Basic from './basic';
 import Midi from './midi';
+import Notation from './notation';
 
 export {
-  Basic,
   Midi,
+  Notation,
 };
 
-export default Basic;
+export default Notation;

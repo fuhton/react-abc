@@ -4,5 +4,3 @@ npm-debug.log
 *.log
 
 dist/*.js
-*.png
-!src/midi/icons/*.png

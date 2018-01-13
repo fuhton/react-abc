@@ -6,65 +6,25 @@ React component for displaying Abc based notation. Wraps [Abc.js](https://github
 ## Installation
 Installation can be achieved via NPM.
 ```
-npm install react-abc
+npm install --save react-abc
 ```
 ---
 ## Usage
-React-ABC takes a notation prop and outputs the rendered ABC notation. You can optionally add an `el` prop to attach to a specific DOM or React element.
+React-ABC provides a series of components for use in displaying notation, midi players, or an editor.
 
-To see it in use, check the example here - [http://fuhton.github.io/react-abc/example/](http://fuhton.github.io/react-abc/example/)
-
-### ES6
-```javascript
-
-import React from 'react';
-import Abc from 'react-abc';
-
-var App = React.createClass({
-
-  render: function() {
-    const notation = `
-      M: 4/4
-      L: 1/16
-      K: A
-      %%staves {V1 V2}
-      V: V1 clef=treble
-      V: V2 clef=bass
-      [V: V1]C16| D16| D16| D16|
-      [V: V2]B,,16| B,,16| D,16| D,16|
-    `;
-    return(
-      <Abc notation={notation} />
-    );
-  }
-
-});
-
-export default App;
-```
+You can review each component's use cases and properties:
+* [`<Notation />`](src/notation/README.md)
+* [`<Midi />`](src/midi/README.md)
 
 ---
-## Properties *(Options)*
+## Docs
 
-### **notation** | *string* | **required**
-The notation string to render
-
-### **el** | *DOM Element* or *React Element*
-Optional element to attach the notation to. Will default to an internal element.
-
-### **engraverParams** | *object* | default: {}
-Optional parameters for the engraver
-
-### **parserParams** | *object* | default: {}
-Optional parameters for parsing the notation
-
-### **renderParams** | *object* | default: {}
-Optional parameters for the rendering the notation
+* [What is ABC Notation?](docs/what-is-abc-notation.md)
 
 ---
 ## Example
-An example of the component in action is available in the example folder. To see it in action you can run `npm run example` which will run the webpack build and open the example.
+An example of the component in action is available in the example folder. To see it in action you can run `npm run webpack-dev-server` which will run the webpack build and open the example.
 
 ---
 ## Licence
-React Abc Component is [MIT licensed](LICENSE.md)
+React-Abc Component is [MIT licensed](LICENSE.md)

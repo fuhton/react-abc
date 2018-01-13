@@ -32,7 +32,7 @@
 }
 
 .abcjs-inline-midi .abcjs-midi-selection:before {
-  content: url(./icons/arrows-h.png); /* fa-arrows-h [&#xf07e;] */
+  content: url(./icons/arrows-h.svg); /* fa-arrows-h [&#xf07e;] */
 }
 
 .abcjs-inline-midi .abcjs-midi-selection.abcjs-pushed {
@@ -41,7 +41,7 @@
 }
 
 .abcjs-inline-midi .abcjs-midi-loop:before {
-  content: url(./icons/refresh.png); /*   fa-refresh [&#xf021;] */
+  content: url(./icons/refresh.svg); /*   fa-refresh [&#xf021;] */
 }
 
 .abcjs-inline-midi .abcjs-midi-loop.abcjs-pushed {
@@ -50,7 +50,7 @@
 }
 
 .abcjs-inline-midi .abcjs-midi-reset:before {
-  content: url(./icons/step-backward.png); /*   fa-step-backward [&#xf048;] */
+  content: url(./icons/step-backward.svg); /*   fa-step-backward [&#xf048;] */
 }
 
 .abcjs-inline-midi .abcjs-midi-reset.abcjs-pushed {
@@ -59,11 +59,11 @@
 }
 
 .abcjs-inline-midi .abcjs-midi-start:before {
-  content: url(./icons/play.png); /*   fa-play [&#xf04b;]    fa-pause [&#xf04c;] */
+  content: url(./icons/play.svg); /*   fa-play [&#xf04b;]    fa-pause [&#xf04c;] */
 }
 
 .abcjs-inline-midi .abcjs-midi-start.abcjs-pushed:before {
-  content: url(./icons/play.png); /*   fa-play [&#xf04b;]    fa-pause [&#xf04c;] */
+  content: url(./icons/play.svg); /*   fa-play [&#xf04b;]    fa-pause [&#xf04c;] */
 }
 
 .abcjs-inline-midi .abcjs-midi-progress-background {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import abc from 'abcjs';
 
-class Basic extends Component {
+class Notation extends Component {
   componentDidMount() {
     const {
       el,
@@ -31,7 +31,7 @@ class Basic extends Component {
   }
 }
 
-Basic.propTypes = {
+Notation.propTypes = {
   el: PropTypes.node,
   engraverParams: PropTypes.object,
   notation: PropTypes.string.isRequired,
@@ -39,11 +39,11 @@ Basic.propTypes = {
   renderParams: PropTypes.object,
 };
 
-Basic.defaultProps = {
+Notation.defaultProps = {
   el: null,
   engraverParams: {},
   parserParams: {},
   renderParams: {},
 };
 
-export default Basic;
+export default Notation;

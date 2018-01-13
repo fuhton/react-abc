@@ -1,9 +1,10 @@
-export default `
-M: 4/4
-L: 1/16
-%%staves {V1 V2}
-V: V1 clef=treble
-V: V2 clef=bass
-[V: V1]C4z4z8| D16| D16| D16|
-[V: V2]B,,16| B,,16| D,16| D,16|
-`;
+import React from 'react';
+import { Notation } from '../../src';
+
+import notation from './data';
+
+export default () => (
+  <div>
+    <Notation notation={notation} />
+  </div>
+);
