@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Redirect, Route, Switch } from 'react-router-dom'; // eslint-disable-line
+import { Link, Route, Switch } from 'react-router-dom'; // eslint-disable-line
 
 import Basic from './Basic';
 import Midi from './Midi';
@@ -18,7 +18,6 @@ export default () => (
       <Switch>
         <Route path="/basic" component={Basic} />
         <Route path="/midi" component={Midi} />
-        <Redirect to="/basic" />
       </Switch>
     </main>
   </div>
