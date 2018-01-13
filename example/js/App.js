@@ -9,8 +9,8 @@ export default () => (
     <header>
       <nav>
         <ul>
-          <li><Link to="/basic">Basic</Link></li>
-          <li><Link to="/midi">Midi</Link></li>
+          <li><Link to="./basic">Basic</Link></li>
+          <li><Link to="./midi">Midi</Link></li>
         </ul>
       </nav>
     </header>
