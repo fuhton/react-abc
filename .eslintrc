@@ -5,6 +5,9 @@
   "extends": ["eslint:recommended", "airbnb"],
   "plugins": ["react"],
   "rules": {
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "" ]
+    }],
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react/forbid-prop-types": [1, { "forbid": ["any", "array"] }]
   }

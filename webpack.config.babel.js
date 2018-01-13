@@ -6,13 +6,23 @@ module.exports = {
     filename: 'example/app.js',
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules)/,
-      use: {
-        loader: 'babel-loader',
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
-    }],
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+      },
+    ],
   },
   devtool: 'inline-source-map',
   devServer: {

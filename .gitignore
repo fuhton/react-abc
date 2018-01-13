@@ -1,5 +1,8 @@
 node_modules
 .DS_Store
 npm-debug.log
-dist/*.js
 *.log
+
+dist/*.js
+*.png
+!src/midi/icons/*.png

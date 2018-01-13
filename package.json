@@ -30,11 +30,15 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^1.1.6",
+    "react-router-dom": "^4.2.2",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1"
   },
@@ -43,7 +47,7 @@
     "eslint": "eslint --ext .js src",
     "prepublish": "npm run eslint && npm run build",
     "webpack": "webpack",
-    "example": "webpack-dev-server"
+    "webpack-dev-server": "webpack-dev-server"
   },
   "peerDependencies": {
     "prop-types": "^15.5.8",
