@@ -3,7 +3,8 @@ import path from 'path';
 module.exports = {
   entry: './example/js/index.js',
   output: {
-    filename: 'example/app.js',
+    filename: 'app.js',
+    path: path.join(__dirname, 'example'),
   },
   module: {
     rules: [
