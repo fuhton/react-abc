@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import abc from 'abcjs';
+
+import { midiProps } from '../defaults/props';
 import './style.css';
 
 class Midi extends Component {
@@ -44,12 +46,6 @@ Midi.propTypes = {
   soundfontUrl: PropTypes.string,
 };
 
-Midi.defaultProps = {
-  el: null,
-  engraverParams: {},
-  parserParams: {},
-  renderParams: {},
-  soundfontUrl: 'https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/',
-};
+Midi.defaultProps = midiProps;
 
 export default Midi;

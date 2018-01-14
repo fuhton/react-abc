@@ -13,8 +13,9 @@ npm install --save react-abc
 React-ABC provides a series of components for use in displaying notation, midi players, or an editor.
 
 You can review each component's use cases and properties:
-* [`<Notation />`](src/notation/README.md)
+* [`<Editor />`](src/editor/README.md)
 * [`<Midi />`](src/midi/README.md)
+* [`<Notation />`](src/notation/README.md)
 
 ---
 ## Docs

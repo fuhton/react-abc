@@ -15,10 +15,10 @@ export default ({ notation}) => <Notation notation={notation} />;
 
 ## Props
 
-| Prop | Description | Required |
-| --- | --- | --- |
-| `notation` | A string of `ABC` notation | Required |
-| `el` | A DOM element (i.e. `document.getElementById('element')`) or a DOM id string (i.e. `example`). If not provided, the component will use ref on the outputted DIV as the target element | |
-| `engraverParams` | | |
-| `parserParams` | | |
-| `renderParams` | | |
+| Prop             | Description                                    | Required |
+| ---              | ---                                            | ---      |
+| `notation`       | A string of `ABC` notation                     | Required |
+| `el`             | A DOM element (i.e. `document.getElementById('element')`) or a DOM id string (i.e. `example`). If not provided, the component will use ref on the outputted DIV as the target element | |
+| `engraverParams` | [Link](src/defaults/README.md#engraver-params) | |
+| `parserParams`   | [Link](src/defaults/README.md#parser-params)   | |
+| `renderParams`   | [Link](src/defaults/README.md#render-params)   | |

@@ -17,11 +17,11 @@ If you wish to override the default CSS, you can use the included CSS and modify
 
 ## Props
 
-| Prop | Description | Required |
-| --- | --- | --- |
-| `notation` | A string of `ABC` notation | Required |
-| `soundfontUrl` | A string location of the soundfont file. It must have a trailing slash. If not provided , the component will use `https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/` as it's endpoint. | |
-| `el` | A DOM element (i.e. `document.getElementById('element')`) or a DOM id string (i.e. `example`). If not provided, the component will use ref on the outputted DIV as the target element | |
-| `engraverParams` | | |
-| `parserParams` | | |
-| `renderParams` | | |
+| Prop             | Description                                    | Required |
+| ---              | ---                                            | --- |
+| `notation`       | A string of `ABC` notation                     | Required |
+| `soundfontUrl`   | A string location of the soundfont file. It must have a trailing slash. If not provided , the component will use `https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/` as it's endpoint. | |
+| `el`             | A DOM element (i.e. `document.getElementById('element')`) or a DOM id string (i.e. `example`). If not provided, the component will use ref on the outputted DIV as the target element | |
+| `engraverParams` | [Link](src/defaults/README.md#engraver-params) | |
+| `parserParams`   | [Link](src/defaults/README.md#parser-params)   | |
+| `renderParams`   | [Link](src/defaults/README.md#render-params)   | |

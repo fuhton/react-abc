@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import abc from 'abcjs';
 
+import { notationProps } from '../defaults/props';
+
 class Notation extends Component {
   componentDidMount() {
     const {
@@ -39,11 +41,6 @@ Notation.propTypes = {
   renderParams: PropTypes.object,
 };
 
-Notation.defaultProps = {
-  el: null,
-  engraverParams: {},
-  parserParams: {},
-  renderParams: {},
-};
+Notation.defaultProps = notationProps;
 
 export default Notation;
