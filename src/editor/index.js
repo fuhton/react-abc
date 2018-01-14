@@ -19,10 +19,6 @@ class Editor extends Component {
 
     abc.midi.soundfontUrl = soundfontUrl;
 
-    console.log('------------------------------------');
-    console.log(editorParams);
-    console.log('------------------------------------');
-
     this.editor = new abc.Editor(
       editArea,
       editorParams,

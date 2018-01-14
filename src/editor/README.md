@@ -30,5 +30,5 @@ export default ({ notation}) => (
 | Prop             | Description                                    | Required |
 | ---              | ---                                            | --- |
 | `editArea`       | The string id of the editable notation         | Required |
-| `editorParams`   | [Link](../defaults/README.md#editor-params)   | |
+| `editorParams`   | [Link](../defaults/README.md#editor-params)    | |
 | `soundfontUrl`   | A string location of the soundfont file. It must have a trailing slash. If not provided , the component will use `https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/` as it's endpoint. | |
