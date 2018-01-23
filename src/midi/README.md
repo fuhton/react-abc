@@ -2,6 +2,8 @@
 
 Implement a MIDI player to playback the passed notation.
 
+To read about the ABCjs implementation - [here](https://github.com/paulrosen/abcjs/blob/master/docs/midi.md)
+
 ## Usage
 
 The below example is using ES6.

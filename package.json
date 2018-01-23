@@ -3,6 +3,18 @@
   "version": "0.2.1",
   "description": "React component for displaying ABC based notation",
   "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src/index.js > dist/index.js",
+    "eslint": "eslint --ext .js src",
+    "prepare": "npm run eslint && npm run build",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server"
+  },
+  "babel": {
+    "presets": ["react", "env"],
+    "plugins": ["transform-object-rest-spread"]
+  },
   "keywords": [
     "abcjs",
     "abc",
@@ -12,10 +24,7 @@
     "react"
   ],
   "author": "Nicholas Smith <fuhton@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fuhton/react-abc"
-  },
+  "repository": "fuhton/react-abc",
   "bugs": {
     "url": "https://github.com/fuhton/react-abc/issues"
   },
@@ -42,13 +51,6 @@
     "svg-url-loader": "^2.3.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.10.1"
-  },
-  "scripts": {
-    "build": "babel src/index.js > dist/index.js",
-    "eslint": "eslint --ext .js src",
-    "prepublish": "npm run eslint && npm run build",
-    "webpack": "webpack",
-    "webpack-dev-server": "webpack-dev-server"
   },
   "peerDependencies": {
     "prop-types": "^15.5.8",

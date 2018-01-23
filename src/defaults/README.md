@@ -6,6 +6,8 @@
 * [Parser Params](#parser-params)
 * [Render Params](#render-params)
 
+All of these properties are sourced from the ABCjs documentation - [here](https://github.com/paulrosen/abcjs/blob/master/docs/api.md)
+
 ### Engraver Params
 | Param           | Default   | Description |
 | ---             | ---       | ---         |

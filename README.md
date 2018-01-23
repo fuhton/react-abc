@@ -1,16 +1,37 @@
-# React Abc Component
+<p align="center">
+  🎵 react-abc 🎶
+  <br/>
+  <br/>
+  <a href="https://www.npmjs.org/package/react-abc">
+    <img src="https://img.shields.io/npm/v/react-abc.svg?style=flat" alt="npm">
+  </a>
+  <a href="https://travis-ci.org/fuhton/react-abc">
+    <img src="https://travis-ci.org/fuhton/react-abc.svg?branch=master" alt="travis">
+  </a>
+</p>
+
+# react-abc
 
 React component for displaying Abc based notation. Wraps [Abc.js](https://github.com/paulrosen/abcjs) for use in your React libraries
 
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Docs](#docs)
+- [Examples](#examples)
+- [License](#license)
+
 ---
-## Installation
+## Install
 Installation can be achieved via NPM.
 ```
 npm install --save react-abc
 ```
 ---
 ## Usage
-React-ABC provides a series of components for use in displaying notation, midi players, or an editor.
+react-abc provides a series of components for use in displaying notation, midi players, or an editor.
 
 You can review each component's use cases and properties:
 * [`<Editor />`](src/editor/README.md)
@@ -23,9 +44,12 @@ You can review each component's use cases and properties:
 * [What is ABC Notation?](docs/what-is-abc-notation.md)
 
 ---
-## Example
-An example of the component in action is available in the example folder. To see it in action you can run `npm run webpack-dev-server` which will run the webpack build and open the example.
+## Examples
+You can see an example here - [fuhton.github.io/react-abc/example](http://fuhton.github.io/react-abc/example/)
+
+An example of the component in action is available in the example folder. To see it in action you can run `npm run webpack-dev-server` which will run a webpack-dev-server build and open the example.
 
 ---
 ## Licence
-React-Abc Component is [MIT licensed](LICENSE.md)
+
+MIT © [Nicholas Smith](https://fuhton.com)
