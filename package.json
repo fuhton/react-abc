@@ -4,7 +4,7 @@
   "description": "React component for displaying ABC based notation",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src/index.js > dist/index.js",
+    "build": "babel src --out-dir dist && cp -r src/midi/icons dist/midi/ && cp src/midi/style.css dist/midi/",
     "eslint": "eslint --ext .js src",
     "prepare": "npm run eslint && npm run build",
     "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
