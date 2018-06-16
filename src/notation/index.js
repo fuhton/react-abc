@@ -6,7 +6,22 @@ import abc from 'abcjs';
 import { notationProps } from '../defaults/props';
 
 class Notation extends Component {
+  constructor(props) {
+    super(props);
+
+    this.notation = null;
+    this.renderNotation = this.renderNotation.bind(this);
+  }
+
   componentDidMount() {
+    this.renderNotation();
+  }
+
+  componentDidUpdate() {
+    this.renderNotation();
+  }
+
+  renderNotation() {
     const {
       el,
       engraverParams,
@@ -15,7 +30,7 @@ class Notation extends Component {
       renderParams,
     } = this.props;
 
-    abc.renderAbc(
+    this.notation = abc.renderAbc(
       el || this.el,
       notation,
       engraverParams,

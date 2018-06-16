@@ -14,10 +14,7 @@ class Editor extends Component {
     const {
       editArea,
       editorParams,
-      soundfontUrl,
     } = this.props;
-
-    abc.midi.soundfontUrl = soundfontUrl;
 
     this.editor = new abc.Editor(
       editArea,
@@ -37,7 +34,6 @@ class Editor extends Component {
 Editor.propTypes = {
   editArea: PropTypes.string.isRequired,
   editorParams: PropTypes.object,
-  soundfontUrl: PropTypes.string,
 };
 
 Editor.defaultProps = editorProps;

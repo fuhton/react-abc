@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import abc from 'abcjs';
-
+import renderMidi from 'abcjs/src/api/abc_tunebook_midi';
 import { midiProps } from '../defaults/props';
 import './style.css';
 
@@ -15,12 +14,9 @@ class Midi extends Component {
       notation,
       parserParams,
       renderParams,
-      soundfontUrl,
     } = this.props;
 
-    abc.midi.soundfontUrl = soundfontUrl;
-
-    abc.renderMidi(
+    renderMidi(
       el || this.el,
       notation,
       engraverParams,
@@ -46,7 +42,6 @@ Midi.propTypes = {
   notation: PropTypes.string.isRequired,
   parserParams: PropTypes.object,
   renderParams: PropTypes.object,
-  soundfontUrl: PropTypes.string,
 };
 
 Midi.defaultProps = midiProps;
